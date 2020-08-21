@@ -79,6 +79,8 @@ What we do now is to combine pos_rate, pos_freq_pct together to come up with a m
 
 What we try next is to get the CDF (Cumulative Distribution Function) value of both pos_rate and pos_freq_pct.we calculate a harmonic mean of these two CDF values, as we did earlier. By calculating the harmonic mean, we can see that pos_normcdf_hmean metric provides a more meaningful measure of how important a word is within the class.
 
+![Test Image 4](https://github.com/abdulkhaliq0111/sentiment_analysis/blob/master/cdf.png)
+
 It seems like the harmonic mean of rate CDF and frequency CDF has created an interesting pattern on the plot. If a data point is near to the upper left corner, it is more positive, and if it is closer to the bottom right corner, it is more negative. So I took an alternative method of an interactive plot with Bokeh. Bokeh is an interactive visualisation library for Python, which creates graphics in style of D3.js.
 
 ## MODEL SELECTION:
